@@ -119,7 +119,7 @@ CREATE TABLE `teacher` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 INSERT INTO `teacher` (`teacher_id`, `activate`, `username`, `password`, `email`, `school`, `realname`, `teacher_created_time`) VALUES
-(1, 1, 'admin', '456b7016a916a4b178dd72b947c152b7', 'admin@example.com', '管理高中', '管理員', '2014-01-01 00:00:00');
+(1, 1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@example.com', '管理高中', '管理員', '2014-01-01 00:00:00');
 
 --
 -- Table structure for table `word`
