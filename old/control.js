@@ -1,4 +1,4 @@
-﻿var html_button_name_modify = "<div class = 'button inputModify'>修改</div>";
+var html_button_name_modify = "<div class = 'button inputModify'>修改</div>";
 var html_loading = "<div class='load_img'></div>";
 
 $(document).ready(

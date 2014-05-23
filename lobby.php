@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <?php
     session_start();
     if( !isset($_SESSION['identity']) || ($_SESSION['identity']!='admin' && !isset($_SESSION['id'])) ){

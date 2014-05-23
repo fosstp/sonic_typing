@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	include 'php/dbLink.php';
 	if( $_SESSION['identity'] == "teacher" ){
 		if( isset($_GET['lid']) ){

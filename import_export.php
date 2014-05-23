@@ -1,4 +1,4 @@
-﻿<script>
+<script>
 	var upload_success = function(){
 		$("#loading").hide(500, function(){
 			$("#upload_form").show(500);
