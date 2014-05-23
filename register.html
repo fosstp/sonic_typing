@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title>英速小子</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript" src="js/jQuery.md5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>英速小子 Sonic Typing</h1>
+    </header>
+	<div class="register_page">
+		<div style="text-align: center; font-size: 20px; font-weight:bold;">申請教師新帳號</div>
+		<div id="readme_button"><div class="button">服務條款</div></div>
+		<hr>
+		<form method="post" action="" id="register_form">
+			<div>帳號名稱：<input type="text" name="username"/><div class="status" id="check_username_status"></div></div>
+			<div>設定密碼：<input type="password" name="password1"/><div class="status"></div></div>
+			<div>確認密碼：<input type="password" name="password2"/><div class="status" id="check_pw_status"></div></div>
+			<div>真實姓名：<input type="text" name="realname"/><div class="status"></div></div>
+			<div>服務學校：<input type="text" name="school"/><div class="status"></div></div>
+			<div>電子郵件：<input type="text" name="email"/><div class="status" id="check_email_status"></div></div>
+			<div class="submit"><input type="submit" value="註冊"></div>
+		</form>
+	</div>
+	<div class="msg" id="register_msg"></div>
+	<div id="register_success_page" title="註冊成功">
+		<p>註冊成功，請等待管理員審核</p>
+	</div>
+	<div id="readme_page" title="服務條款">
+		<pre>
+關於本站
+系統規劃:南港高中　高慧君老師
+系統開發:黃佑仁(Rokya)、曹又霖(灆洢)
+研發單位:臺北市自由軟體桌面應用推動及發展小組
+		</pre>
+	</div>
+</body>

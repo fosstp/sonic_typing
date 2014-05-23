@@ -1,0 +1,356 @@
+﻿/*
+body{
+	background: #b3dced; 
+	background: -moz-linear-gradient(top,  #b3dced 0%, #29b8e5 50%, #bce0ee 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(50%,#29b8e5), color-stop(100%,#bce0ee));
+	background: -webkit-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); 
+	background: -o-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); 
+	background: -ms-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+	background: linear-gradient(to bottom,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 );
+}
+*/
+
+body {
+    background: #00022b url('../images/bg.png') repeat-x;
+    text-align: center;
+    font-family: "微軟正黑體";
+}
+
+h1{
+	color: #0524C0;
+	font-weight: bold;
+}
+
+/* [login] */
+.login_page{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.login_page .tab_name {
+	display: inline-block;
+	
+	border-width: 1px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	
+	border-style: solid;
+	border-bottom-color: #D1C7C7;
+	border-radius: 2px 2px 0px 0px;
+	
+	padding: 2px 5px 2px 5px;
+	
+	z-index: 2;
+	position:relative;
+    background: white;
+}
+
+.login_page .tab_name:first-child{
+	margin-left: -90px;
+}
+
+.login_page .tab_name.selected, #admin_login_tab_name{
+	font-weight:bold;
+	
+	border-width: 1px;
+	border-color: #D1C7C7;
+	border-bottom-color: #ffffff;
+	
+	padding: 5px 5px 2px 5px;
+	
+	color: blue;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+}
+
+#admin_login_tab_name{
+	margin-left: -120px;
+	/*margin-left: 0px;*/
+	width: 80px;
+}
+
+.login_page .tab_name:hover{
+	color: blue;
+	cursor: pointer;
+
+}
+
+.login_page .tab_content{
+	margin: 0px auto;
+	display:none;
+	background: white;
+}
+
+.login_page .tab_content.selected, #admin_login_tab_content{
+	display:block;
+	
+	min-width: 250px;
+	max-width: 250px;
+	
+	border-color: #D1C7C7;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px;
+	
+	padding: 10px 5px 10px 5px;
+	
+	z-index: 1;
+	position:relative;
+	top:-1px;
+}
+
+.login_page .tab_content.selected div {
+    margin: 5px 0px;
+}
+
+.login_page .submit {
+	text-align: center;
+}
+
+.msg {
+	margin-top: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.msg.error_msg {
+	color: red;
+}
+
+.msg.success_msg{
+	color: #48d418;
+}
+
+#forget_password {
+	margin-right: 50px;
+}
+
+/* [readme] */
+#readme_button{
+	text-align: right;
+}
+
+#readme_page{
+	display: none;
+	text-align: center;
+	font-size: 20px;
+}
+
+/* [register page] */
+.register_page {
+	background-color: white;
+	width: 350px;
+	margin: 0px auto;
+	padding: 10px 20px 20px 20px;
+	border-radius: 2px;
+}
+
+.register_page .readme{
+	text-align: right;
+}
+
+.register_page hr{
+	height: 3px;
+	background-color: #0C8ADE;
+	border-radius: 5px;
+}
+
+.register_page div{
+	margin-top: 5px;
+}
+
+#register_form {
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+}
+
+#register_form .status{
+	width: 16px;
+	height: 16px;
+	margin: 0px;
+	
+	display: inline-block;
+	position:relative;
+	top: 4px;
+	left: 5px;
+	
+	background-size:contain;
+	/*background-color:blue;*/
+}
+
+#register_form .status.loading{
+	background: url('../images/ajax-loader.gif') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#register_form .status.checked{
+	background: url('../images/1375685087_button_ok.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#register_form .status.warning{
+	background: url('../images/1375685089_error.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#register_success_page{
+	display:none;
+}
+
+/*[setup page]*/
+.setup_page {
+	background-color: white;
+	width: 500px;
+	margin: 0px auto;
+	padding: 10px 20px 20px 20px;
+	border-radius: 2px;
+	
+	font-size: 16px;
+}
+
+.setup_page .readme{
+	text-align: right;
+}
+
+.setup_page hr{
+	height: 3px;
+	background-color: #0C8ADE;
+	border-radius: 5px;
+}
+
+.setup_page div{
+	margin-top: 5px;
+}
+
+#setup_form {
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+}
+
+#setup_form>div:first-child{
+	width: 350px;
+	margin: 0 auto;
+	text-align:left;
+}
+
+#setup_form .status{
+	width: 16px;
+	height: 16px;
+	margin: 0px;
+	
+	display: inline-block;
+	position:relative;
+	top: 4px;
+	left: 5px;
+	
+	background-size:contain;
+	/*background-color:blue;*/
+}
+
+#setup_form .status.loading{
+	background: url('../images/ajax-loader.gif') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#setup_form .status.checked{
+	background: url('../images/1375685087_button_ok.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#setup_form .status.warning{
+	background: url('../images/1375685089_error.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#setup_success_page{
+	display:none;
+}
+
+#setup_form input[type=text]{
+	overflow: hidden;
+}
+
+/*[website_config]*/
+.website_config_page {
+	background-color: white;
+	width: 350px;
+	margin: 50px auto;
+	padding: 10px 20px 10px 20px;
+	border-radius: 2px;
+}
+
+.website_config_page .readme{
+	text-align: right;
+}
+
+.website_config_page hr{
+	height: 3px;
+	background-color: #0C8ADE;
+	border-radius: 5px;
+}
+
+.website_config_page div{
+	margin-top: 5px;
+}
+
+#config_form {
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+}
+
+#config_form .status{
+	width: 16px;
+	height: 16px;
+	margin: 0px;
+	
+	display: inline-block;
+	position:relative;
+	top: 4px;
+	left: 5px;
+	
+	background-size:contain;
+	/*background-color:blue;*/
+}
+
+#config_form .status.loading{
+	background: url('../images/ajax-loader.gif') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#config_form .status.checked{
+	background: url('../images/1375685087_button_ok.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#config_form .status.warning{
+	background: url('../images/1375685089_error.png') no-repeat 0px 0px;
+	background-size:contain;
+}
+
+#config_msg{
+	margin: 5px auto;
+}
+
+/*[button]*/
+
+.button {
+	display: inline-block;
+	background-color: #3F5BE6;
+	color: white;
+	padding: 2px 5px 2px 5px;
+	border-radius: 2px;
+	margin-bottom: 0px;
+}
+
+.button:hover {
+	box-shadow:2px 2px 12px -2px rgba(10%,10%,10%,0.5);
+	cursor: pointer;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+

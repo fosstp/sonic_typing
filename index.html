@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+	<title>英速小子</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-latest.min.js"></script>
+	<script type='text/javascript' src='js/index.js'></script>
+	<script type="text/javascript" src="js/jQuery.md5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>英速小子 Sonic Typing</h1>
+    </header>
+	<div class="login_page">
+		<div class="tab_name" id="teacher_login_tab_name">我是教師</div><div class="tab_name" id="student_login_tab_name">我是學生</div>
+		<div class="tab_content" id="teacher_login_tab_content">
+			<form method="post" action="" id="teacher_form">
+				<div>教師帳號：<input type="text" name="username"/></div>
+				<div>教師密碼：<input type="password" name="password"/></div>
+				<div class="submit"><input type="submit" value="登入"></div>
+			</form>
+			<div class="button" id="forget_password">忘記密碼</div><div class="button" id="register"><a href="register.html">申請帳號</a></div>
+		</div>
+		<div class="tab_content" id="student_login_tab_content">
+			<form method="post" action="" id="student_form">
+				<div>教師帳號：<input type="text" name="teacher_reference"/></div>
+				<div>學生帳號：<input type="text" name="student_username"/></div>
+				<div>學生密碼：<input type="password" name="password"/></div>
+				<div class="submit"><input type="submit" value="登入"></div>
+			</form>
+		</div>
+		<div class="msg" id="login_msg"></div>
+	</div>
+</body>

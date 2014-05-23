@@ -1,0 +1,21 @@
+.RMList{
+	margin-top: 10px;
+	display: none;
+}
+
+.RMList .edit, .RMList .input{
+	text-align: left;
+}
+
+.RMList .dialog-upload{
+	display: none;
+}
+
+.RMConsole{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.RMList .check{
+	
+}

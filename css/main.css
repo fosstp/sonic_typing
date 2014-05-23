@@ -1,0 +1,366 @@
+﻿body {
+    background: #00022b url('../images/bg.png') repeat-x;
+}
+
+.page {
+    font-family: "微軟正黑體";
+    margin: 0 auto;
+	padding: 5px 10px 5px 10px;
+    width: 900px;
+    text-align: center;
+    background: url('../images/sBg.png');
+	border-radius: 5px;
+}
+
+header {
+    width: 900px;
+}
+
+nav {
+    text-align: left;
+    width: 200px;
+    float: left;
+}
+	nav #identity{
+		font-size: 20px;
+		text-align: center;
+		background-color: white;
+		margin: 10px 15px 10px 15px;
+		padding: 8px 10px 8px 10px;
+		box-shadow: 2px 2px 4px 4px rgba(50%,50%,60%,0.35) inset;
+	}
+	
+    nav ul {
+        list-style-type: none;
+        padding: 0px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+
+        nav ul li {
+            background: white;
+			border-radius: 0px 5px 5px 0px;
+            border-left: 10px solid #0094ff;
+            /*padding-left: 10px;*/
+			padding: 5px 10px 5px 10px;
+			margin-bottom: 10px;
+			transition-duration: 0.2s;
+			transition-timing-function: linear;
+			width: 75%;
+			font-size: 20px;
+        }
+		/*
+        nav ul li:hover {
+            background: black;
+            border-left: 10px solid red;
+            color: white;      
+        }
+		*/
+		nav ul li:hover {
+            color: blue;
+			cursor: pointer;
+			text-align: center;
+			width: 90%;
+        }
+
+            nav ul li a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+            }
+
+article {
+    width: 700px;
+    min-height: 500px;
+    float: right;
+}
+
+footer {
+    width: 900px;
+    clear: both;
+    background: gray;
+    font-size: small;
+    color: white;
+}
+
+h1{
+	color: #0524C0;
+	font-weight: bold;
+}
+
+table {
+    /*margin: 0 auto;*/
+	margin: 10px;
+    border: 2px;
+}
+    table th {
+        background-color: #0026ff;
+        color: white;
+        padding: 4px 10px 4px 10px;
+        margin: 0px;
+		font-weight: bold;
+		vertical-align: middle;
+    }
+
+    table td {
+        background: white;
+        padding: 4px;
+        margin: 0px;
+        color: black;
+		display: table-cell;
+		vertical-align: middle;
+    }
+	
+	table td.edit:hover, table td.checkit:hover{
+        background-color: #FFFFBD;
+    }
+	table td .inputing{
+		width:95%;
+	}
+	table.link tr:hover td{
+		background-color: #FFFFBD;
+		cursor: pointer;
+	}
+
+.page_title{
+	text-align: center;
+	font-size: 30px;
+	font-weight:bold;
+	color: white;
+	margin-left: 580px;
+	margin-right: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: #FFA226;
+	border-radius: 5px;
+	box-shadow:8px 24px 2px rgba(100%,0%,0%,0.4),16px -4px 2px rgba(0%,100%,0%,0.4),24px 12px 2px rgba(0%,0%,100%,0.4);
+	/*box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);*/
+}
+
+hr{
+	height: 3px;
+	background-color: #0C8ADE;
+	border-radius: 5px;
+}
+
+.lesson_name{
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.lesson_name span{
+	background-color: #006414;
+	padding: 4px 8px 4px 8px;
+	
+	width: auto;
+	
+	border-style: solid;
+	border-width: 4px;
+	border-color: #B25600;
+	border-radius: 3px;
+	
+	font-size: 25px;
+	color: white;
+}
+
+/*msg*/
+.error_msg{
+	color: red;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 10px;
+}
+
+.load_img{
+	display: inline-block;
+	background: url('../images/ajax-loader.gif');
+	background-repeat:no-repeat;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+}
+
+.lesson_page_subtitle{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.msg {
+	font-size: 20px;
+	margin-top: 5px;
+	color: black;
+	font-weight: bold;
+}
+
+.msg.error_msg {
+	color: red;
+}
+
+.msg.success_msg{
+	color: #00861D;
+}
+
+/*[button]*/
+
+.button {
+	display: inline-block;
+	background-color: #3F5BE6;
+	color: white;
+	padding: 2px 5px 2px 5px;
+	border-radius: 2px;
+	margin-bottom: 0px;
+}
+
+.button:hover {
+	box-shadow:2px 2px 12px -2px rgba(10%,10%,10%,0.5);
+	cursor: pointer;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.edit_button{
+	display: inline-block;
+	background: url('../images/1375777449_file_edit.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+}
+
+.delete_button{
+	display: inline-block;
+	background: url('../images/1375785160_file_delete.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+}
+
+.upload_button{
+	display: inline-block;
+	background: url('../images/1375793946_hard-drive-upload_basic_blue.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	float:right;
+
+	cursor: pointer;
+}
+
+.play_button{
+	display: inline-block;
+	background: url('../images/1375874305_player_play.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+	
+	margin: auto;
+}
+
+.browse_button{
+	display: inline-block;
+	background: url('../images/1375959700_file_search.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+}
+
+.sound_button{
+	display: inline-block;
+	background: url('../images/1375965323_volume.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	margin-left: 5px;
+	
+	cursor: pointer;
+}
+
+.checked_button{
+	display: inline-block;
+	background: url('../images/1376380886_notification_done.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+}
+.unchecked_button{
+	display: inline-block;
+	background: url('../images/1376380913_notification_error.png') no-repeat 0px 0px;
+	background-size:contain;
+	
+	width: 20px;
+	height: 20px;
+	
+	cursor: pointer;
+}
+
+.tab_button{
+	display: inline-block;
+	border-style: solid;
+	border-width: 5px 0px 0px 0px;
+	border-top-color: grey;
+	padding: 2px 6px 2px 6px;
+	background-color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	cursor: pointer;
+}
+
+.tab_button:nth-child(1){
+	margin-left: 12px;
+}
+
+.tab_button.selected{
+	border-top-color: blue;
+}
+
+.tab_button:hover{
+	background-color: #FFFFBD;
+}
+
+#lessonOpen{
+	display: none;
+}
+
+.checkitOn{
+	background-color: #ffff55;
+}
+
+.yellow{
+	background-color: #ffff55;
+}
+
+.password{
+	overflow: hidden;
+}
+
+.newadd{
+	display: none;
+}

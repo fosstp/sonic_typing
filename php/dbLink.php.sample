@@ -1,0 +1,7 @@
+<?php
+function STmysqli(){
+	$mysqli = new mysqli("localhost", "DB_ACCOUNT", "DB_PASSWORD", "DB_NAME");
+	$mysqli->query('SET NAMES utf8');
+	return $mysqli;
+}
+?>
