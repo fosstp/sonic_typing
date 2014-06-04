@@ -26,15 +26,10 @@
 		//API http://www.voicerss.org/api/documentation.aspx
 		$word = substr($word, 0, 100);
 		$word = str_replace("&nbsp;"," ",$word);
-		//file_put_contents($relative_path."audio/"."debug0.txt", "$word");
 		$word = html_entity_decode($word);
 		// Replace the non-alphanumeric characters 
 		// The spaces in the sentence are replaced with the Plus symbol
-		//file_put_contents($relative_path."audio/"."debug.txt", "$word");
-		//$word = urlencode($word);
 		$word = rawurlencode($word);
-		//file_put_contents($relative_path."audio/"."debug2.txt", "$word");
-		//file_put_contents($relative_path."audio/"."debug2.txt", rawurlencode('New Word'));
 		
 		// Save the MP3 file in this folder with the .mp3 extension 
 		$filepath = $relative_path . "data/audio/" . $word . ".mp3";

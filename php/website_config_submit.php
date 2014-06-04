@@ -14,7 +14,6 @@
 	
 	//[比較&覆蓋]
 	foreach ($old_data as $key => $value) {
-		//echo "\$a[$k] => $v.\n";
 		if( $new_data[$key] == '' ){
 			$new_data[$key] = $old_data[$key];
 		}
@@ -26,5 +25,4 @@
 	fclose($fp);
 	
 	echo "OK";
-	//echo "NO";
 ?>

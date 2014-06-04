@@ -6,7 +6,7 @@
 
     include 'dbLink.php';
     include 'SQLquery.php';
-    $fp = fopen("..\\data\\$_SESSION[id].csv", "w");
+    $fp = fopen("../data/$_SESSION[id].csv", "w");
 	$mysqli = STmysqli();
 	if( isset($_POST["lesson_id"]) ){
 		$result = $mysqli->query("SELECT * FROM lesson WHERE teacher_id = $_SESSION[id] AND lesson_id = $_POST[lesson_id]");
@@ -14,6 +14,7 @@
 	else{
 		$result = $mysqli->query("SELECT * FROM lesson WHERE teacher_id = $_SESSION[id]");
 	}
+        // workaround for encoding issue
 	fwrite($fp, "\xEF\xBB\xBF");
 	while( $row = $result->fetch_assoc() ){
 		fwrite($fp, "\"lesson\",\"$row[name]\"\n");

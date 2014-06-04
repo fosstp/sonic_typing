@@ -12,67 +12,6 @@
 include "./php/dbLink.php";
 $mysqli = STmysqli();
 
-/*
-function TeacherRecordView(){
-	global $mysqli;
-	
-	//序號, 練習時間, 單元名稱, 班級, 學生, 版本, 花費時間
-	$my_query = "
-		SELECT record_id, record_created_time, name, class_name, seat_num, student.realname, mode, record_cost_time
-		FROM( 
-			record NATURAL JOIN lesson NATURAL JOIN student NATURAL JOIN class
-			JOIN teacher ON (class.teacher_id=teacher.teacher_id)
-		) WHERE teacher.teacher_id=$_SESSION[id]
-		ORDER BY `record`.`record_created_time` DESC;
-	";
-	$record_result = $mysqli->query( $my_query );
-
-	if($record_result==NULL || $record_result->num_rows==0 ){
-		echo "<div class='error_msg'>尚無任何紀錄</div>";
-	}else{
-		//echo "<div style='text-align:right; margin-right:50px;'>單字數:<span id='word_count'>$word_result->num_rows</span></div>";
-		?>
-		<table style='margin-top:10px;'>
-		<tr>
-		<th style='width:50px'>編號</th>
-		<th style='width:120px'>練習日期</th>
-		<th style='width:250px'>單元名稱</th>
-		<th style='width:80px'>班級</th>
-		<th style='width:60px'>座號</th>
-		<th style='width:80px'>學生</th>
-		<th style='width:80px'>版本</th>
-		<th style='width:120px'>花費時間</th>
-		</tr>
-		<?php
-		while( $row = $record_result->fetch_assoc() ){
-			echo "<tr>
-			<td>$row[record_id]</td>
-			<td>$row[record_created_time]</td>
-			<td>$row[name]</td>
-			<td>$row[class_name]</td>
-			<td>$row[seat_num]</td>
-			<td>$row[realname]</td>
-			";
-			if( $row['mode'] == 'recite' ){
-				echo "<td>背書版</td>";
-			}else if( $row['mode'] == 'hint' ){
-				echo "<td>提示版</td>";
-			}else if( $row['mode'] == 'test' ){
-				echo "<td>測驗版</td>";
-			}else{
-				echo "<td>黑板</td>";
-			}
-			
-			echo "
-			<td>$row[record_cost_time]秒</td>
-			</tr>";
-		}
-		echo "
-</table>
-";
-	}
-}
-*/
 function TeacherViewShowAll(){
 	global $mysqli;
 	?>

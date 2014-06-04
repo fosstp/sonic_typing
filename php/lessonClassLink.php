@@ -8,7 +8,6 @@
     $mysqli = STmysqli();
 
     if($_POST['control'] == "Add"){
-	//echo $_POST['lesson_id'] . ":" . $_POST['class_id'];
         $result = $mysqli->query("INSERT INTO lesson_class_allow(lesson_id, class_id) VALUES ($_POST[lesson_id], $_POST[class_id])");
         if( $result == NULL ){
             echo $mysqli->error;

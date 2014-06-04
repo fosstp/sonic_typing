@@ -187,8 +187,6 @@ function PageTypingPlayer(){
 		
 		
 		echo "<div class='typing_page'>";
-		//echo "<div class='lesson_page_subtitle'>課號$lesson[lesson_id] $lesson[name]</div>";
-		//echo "<div id='lesson_name'>課號$lesson[lesson_id]　$lesson[name]</div>";
 		echo "<div class='lesson_name'><span>$lesson[name]</span></div>";
 		if( $_GET['mode'] == 'recite' ){
 			echo "<div id='mode'>背書版</div>";

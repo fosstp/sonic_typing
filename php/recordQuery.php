@@ -94,12 +94,10 @@ $data = array();
 while( $row = $result->fetch_assoc() ){
 	$rowArray = array();
 	foreach ($row as $key => $value) {
-		//array_push($rowArray, $key);
 		array_push($rowArray, $value);
 	}
 	array_push($data, $rowArray);
 } 
 
-//array_push( $data, $my_query );
 echo json_encode($data);
 ?>
