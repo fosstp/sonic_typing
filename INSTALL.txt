@@ -6,6 +6,9 @@
 1. 將 php/dbLink.php.sample 改名為 php/dbLink.php，並更改此檔案中的資料庫設定
 2. 建立 sonictyping 資料庫
 3. 匯入 install/sonictyping.sql
-4. 至 http://www.voicerss.org 申請 api key，
+4. 讓 data 目錄讓 web server 身分權限寫入，比如：
+    chown www-data:www-data -R data/
+    chmod 0700 -R data/
+5. 至 http://www.voicerss.org 申請 api key，
    並將其值放至 php/onlineSoundDownloader.php 的 $key 變數中
-5. 開始登入網站，預設帳號密碼是 admin/admin
+6. 開始登入網站，預設帳號密碼是 admin/admin
