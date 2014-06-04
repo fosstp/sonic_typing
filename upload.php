@@ -1,6 +1,6 @@
 <?php
    // Edit upload location here
-   $destination_path = "upload/";
+   $destination_path = "data/upload/";
 
    $result = "upload_error";
    

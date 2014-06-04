@@ -37,7 +37,7 @@
 		//file_put_contents($relative_path."audio/"."debug2.txt", rawurlencode('New Word'));
 		
 		// Save the MP3 file in this folder with the .mp3 extension 
-		$filepath = $relative_path . "audio/" . $word . ".mp3";
+		$filepath = $relative_path . "data/audio/" . $word . ".mp3";
 		// If the MP3 file exists, do not create a new request
 		if (!file_exists($filepath)) {
 			$key = "CHANGEMYAPIKEY";
