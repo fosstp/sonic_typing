@@ -10,5 +10,6 @@
     chown www-data:www-data -R data/
     chmod 0700 -R data/
 5. 至 http://www.voicerss.org 申請 api key，
-   並將其值放至 php/onlineSoundDownloader.php 的 $key 變數中
+   並將 php/onlineSoundDownloader.php.sample 改名為 php/onlineSoundDownloader.php
+   然後將申請的 api key 放入此檔案中的 $key 變數
 6. 開始登入網站，預設帳號密碼是 admin/admin
