@@ -5,7 +5,7 @@ var autoSoundFilepathEncode = function(word){
 	var decoded = word.replace(/&nbsp;/g, " ");
 	decoded = $("<div/>").html(decoded).text();
 	
-	return "./audio/"+ encodeURIComponent(decoded) +".mp3";
+	return "./data/audio/"+ encodeURIComponent(decoded) +".mp3";
 };
 
 var stopUpload = function(result){

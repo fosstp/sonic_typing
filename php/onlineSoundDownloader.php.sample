@@ -11,7 +11,7 @@
 		// The spaces in the sentence are replaced with the Plus symbol
 		$word = urlencode($word);
 		// Save the MP3 file in this folder with the .mp3 extension 
-		$filepath = $relative_path . "audio/" . $word . ".mp3";
+		$filepath = $relative_path . "data/audio/" . $word . ".mp3";
 		// If the MP3 file exists, do not create a new request
 		if (!file_exists($filepath)) {
 			$mp3 = file_get_contents("http://translate.google.com/translate_tts?ie=UTF-8&q=$word&tl=en-us");
