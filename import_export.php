@@ -1,39 +1,39 @@
 <script>
-	var upload_success = function(){
-		$("#loading").hide(500, function(){
-			$("#upload_form").show(500);
-			$("#success").show(500);
-		})
-	}
+    var upload_success = function () {
+        $("#loading").hide(500, function () {
+            $("#upload_form").show(500);
+            $("#success").show(500);
+        })
+    }
 
-	var upload_fail = function(){
-		$("#loading").hide(500, function(){
-			$("#upload_form").show(500);
-			$("#fail").show(500);
-		})
-	}
+    var upload_fail = function () {
+        $("#loading").hide(500, function () {
+            $("#upload_form").show(500);
+            $("#fail").show(500);
+        })
+    }
 
-	$(document).ready(function(){
-		$('#upload_form').submit(function(){
-			$("#loading").show(500);
-			$("#success").hide(500);
-			$("#fail").hide(500);
-			$("#upload_form").hide(500);
-			return true;
-		});
-		
-		$('#download_button').click(function(){
-			$.post("php/lessonAPI.php", {}, 
-				function(data){
-					location.href = "data/" + data;
-				});
-		});
-	});
+    $(document).ready(function () {
+        $('#upload_form').submit(function () {
+            $("#loading").show(500);
+            $("#success").hide(500);
+            $("#fail").hide(500);
+            $("#upload_form").hide(500);
+            return true;
+        });
+
+        $('#download_button').click(function () {
+            $.post("php/lessonAPI.php", {},
+                function (data) {
+                    location.href = "data/" + data;
+                });
+        });
+    });
 </script>
 <h2>匯入檔案</h2>
 <form action='import.php' method='post' enctype="multipart/form-data" target="upload_target" id="upload_form" style="margin-top: 50px;">
-	<input type="file" name="csv" value="" />
-	<input type="submit" name="submit" value="儲存" />
+    <input type="file" name="csv" value="" />
+    <input type="submit" name="submit" value="儲存" />
 </form>
 <iframe id='upload_target' name='upload_target' src='#' style='width:0;height:0;border:0px solid #fff;'></iframe>
 <div id="loading" style="display: none"><img src='images/loader.gif' alt='Loading...' /></div>
