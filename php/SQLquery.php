@@ -1,7 +1,7 @@
 <?php
     include "onlineSoundDownloader.php";
 
-    public function QueryMaking($dataname, $control, $mysqli = null,  $id = null, $colname = null, $content = null)
+    function QueryMaking($dataname, $control, $mysqli = null,  $id = null, $colname = null, $content = null)
     {
         switch($control){
             case "insert":
